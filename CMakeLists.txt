@@ -24,5 +24,5 @@ file(GLOB ALL_SOURCE_FILES ${root}/*.h ${root}/*.c ${root}/*.cpp ${root}/*.hpp)
 
 add_library(${PROJECT_NAME} STATIC ${ALL_SOURCE_FILES})
 
-install(FILES ${ALL_SOURCE_FILES} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(FILES ${ALL_SOURCE_FILES} DESTINATION ${CMAKE_PREFIX_PATH})
 
